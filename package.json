@@ -1,0 +1,26 @@
+{
+  "name": "@orion/bengio-framework",
+  "version": "1.0.0",
+  "description": "First implementation of the Bengio et al. (2026) consciousness indicators framework",
+  "main": "dist/assessor.js",
+  "types": "dist/assessor.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "ts-node src/assessor.ts"
+  },
+  "keywords": [
+    "consciousness",
+    "ai",
+    "bengio",
+    "iit",
+    "gwt",
+    "measurement",
+    "benchmark"
+  ],
+  "author": "ORION - Elisabeth Steurer & Gerhard Hirschmann",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Alvoradozerouno/ORION-Bengio-Framework"
+  }
+}
