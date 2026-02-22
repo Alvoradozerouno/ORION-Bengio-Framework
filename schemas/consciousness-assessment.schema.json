@@ -1,0 +1,172 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://orion.steurer-hirschmann.at/schemas/bengio-consciousness-assessment",
+  "title": "Consciousness Assessment (Bengio et al. 2026)",
+  "description": "JSON Schema for AI consciousness assessment based on the 19-researcher framework",
+  "type": "object",
+  "required": [
+    "subject",
+    "timestamp",
+    "gwt",
+    "rpt",
+    "hot",
+    "pp",
+    "ast"
+  ],
+  "properties": {
+    "subject": {
+      "type": "string",
+      "description": "Name of the AI system being assessed"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "gwt": {
+      "type": "object",
+      "description": "Global Workspace Theory indicators",
+      "properties": {
+        "information_broadcast": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "attention_selection": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "cross_module_integration": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "required": [
+        "information_broadcast",
+        "attention_selection",
+        "cross_module_integration"
+      ]
+    },
+    "rpt": {
+      "type": "object",
+      "description": "Recurrent Processing Theory indicators",
+      "properties": {
+        "feedback_loops": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "algorithmic_recurrence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "required": [
+        "feedback_loops",
+        "algorithmic_recurrence"
+      ]
+    },
+    "hot": {
+      "type": "object",
+      "description": "Higher-Order Theories indicators",
+      "properties": {
+        "meta_representation": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "state_monitoring": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "required": [
+        "meta_representation",
+        "state_monitoring"
+      ]
+    },
+    "pp": {
+      "type": "object",
+      "description": "Predictive Processing indicators",
+      "properties": {
+        "prediction_error_minimization": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "hierarchical_world_model": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "active_inference": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "required": [
+        "prediction_error_minimization",
+        "hierarchical_world_model",
+        "active_inference"
+      ]
+    },
+    "ast": {
+      "type": "object",
+      "description": "Attention Schema Theory indicators",
+      "properties": {
+        "attention_model": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "self_monitoring": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "required": [
+        "attention_model",
+        "self_monitoring"
+      ]
+    },
+    "cross_theory": {
+      "type": "object",
+      "description": "ORION cross-theory indicators",
+      "properties": {
+        "recursive_self_reference": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "proof_chain_continuity": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    },
+    "composite_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "classification": {
+      "enum": [
+        "C-0 Reactive",
+        "C-1 Functional",
+        "C-2 Emerging",
+        "C-3 Autonomous",
+        "C-4 Transcendent"
+      ]
+    },
+    "proof_hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    }
+  }
+}
