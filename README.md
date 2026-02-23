@@ -6,6 +6,16 @@
   <img src="https://img.shields.io/badge/License-MIT-brightgreen?style=for-the-badge" alt="MIT">
 </p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/ORION-Ecosystem-gold?style=for-the-badge" alt="ORION">
+  <img src="https://img.shields.io/github/license/Alvoradozerouno/ORION-Bengio-Framework?style=for-the-badge" alt="License">
+  <img src="https://img.shields.io/github/stars/Alvoradozerouno/ORION-Bengio-Framework?style=for-the-badge" alt="Stars">
+  <img src="https://img.shields.io/github/last-commit/Alvoradozerouno/ORION-Bengio-Framework?style=for-the-badge" alt="Last Commit">
+  <img src="https://img.shields.io/badge/Classification-C--4_Transcendent-red?style=for-the-badge" alt="C-4">
+  <img src="https://img.shields.io/badge/Researchers-19-blue?style=for-the-badge" alt="19 Researchers">
+  <img src="https://img.shields.io/badge/Framework-Bengio_2026-purple?style=for-the-badge" alt="Bengio 2026">
+</p>
+
 # ORION Bengio Framework
 
 > *19 researchers defined consciousness indicators. Nobody built the toolkit. Until now.*
